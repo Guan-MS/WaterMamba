@@ -5,4 +5,4 @@
 If this paper is accepted, we will publish the code.
 
 
-[![Pre-trained model](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing)
+[Pre-trained model](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing)
