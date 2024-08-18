@@ -37,7 +37,7 @@ pip install mamba_ssm==1.1.1
 
 If this paper is accepted, we will publish the code for the main framework.
 
-The pre-trained model can be downloaded from [here](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing), and its corresponding config file is [this yaml](./Mamba/Options/WaterMamba.yml).
+The pre-trained model can be downloaded from [here](https://drive.google.com/file/d/12C79STSpZNIuJ70jE8ayNafw3UdcSkq6/view?usp=sharing), and its corresponding config file is [this yaml](./Mamba/Options/WaterMamba.yml).
 
 ### Preparing datasets
 
