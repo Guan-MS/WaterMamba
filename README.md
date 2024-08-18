@@ -12,9 +12,9 @@ Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luoand Yang So
 
 <hr />
 
-## Network Architecture
+### Network Architecture
 <img src="assets/Mamba.png" alt="Demo" style="zoom:100%;" />
-## Dependencies and Installation
+### Dependencies and Installation
 
 This codebase was tested with the following environment configurations. It may work with other versions.
 
