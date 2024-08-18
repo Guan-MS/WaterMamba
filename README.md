@@ -1,5 +1,5 @@
 # WaterMamba: Visual State Space Model for UnderWater Image Enhancement
-Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luoand Yang Song
+Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luo and Yang Song
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2405.08419)
 
@@ -22,7 +22,7 @@ This codebase was tested with the following environment configurations. It may w
 - Ubuntu 20.04
 - CUDA 11.7
 - Python 3.10
-- PyTorch 2.0.1 + cu117Previous installation
+- PyTorch 2.0.1 + cu117
 
 ### Previous installation
 
