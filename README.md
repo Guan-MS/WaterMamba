@@ -2,7 +2,7 @@
 Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luoand Yang Song
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2405.08419)
 
-<img src="assets/model.png" alt="Demo" style="zoom:25%;" />
+<img src="assets/model.png" alt="Demo" style="zoom:10%;" />
 
 
 <hr />
