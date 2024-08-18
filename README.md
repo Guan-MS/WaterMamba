@@ -32,19 +32,14 @@ pip install causal_conv1d==1.0.0
 pip install mamba_ssm==1.1.1
 ```
 
-See [environment.yaml](./environment.yaml) for requirements on packages. Simple installation:
 
-```
-conda env create -f environment.yaml
-```
-
-## Pre-trained Model
+### Pre-trained Model
 
 If this paper is accepted, we will publish the code for the main framework.
 
-The pre-trained model can be downloaded from [here](https://drive.google.com/drive/folders/1p0J1IJc99bs9iaIktrum0mmv3omfjSuw), and its corresponding config file is [this yaml](./configs/mamba_ldm/mamba-f16-c256-unet.yaml).
+The pre-trained model can be downloaded from [here](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing), and its corresponding config file is [this yaml](./Mamba/Options/WaterMamba.yml).
 
-## Preparing datasets
+### Preparing datasets
 
 ### Datasets:
 
@@ -57,7 +52,7 @@ The pre-trained model can be downloaded from [here](https://drive.google.com/dri
 (4) U45(UIE): [Data](https://github.com/IPNUISTlegal/underwater-test-dataset-U45-/tree/master/upload/U45)
 
 
-To make use of the [test.py](evaluate.py) and the files in [ldm/data/](./ldm/data/), the dataset folder names should be lower-case and structured as follows.
+To make use of the [test.py](./Mamba/test.py) and the files in [Mamba/](./Mamba/test.py), the dataset folder names should be lower-case and structured as follows.
 
 ```
 WaterMamba
@@ -76,10 +71,7 @@ WaterMamba
 ```
 
 ## Training
-
-```
-python basicsr.train.py --base configs/autoencoder/WaterMamba.yml
-```
+To make use of the [train.py](./basicsr/train.py)
 
 ## Citation
 
@@ -99,6 +91,3 @@ Should you have any question, please contact 1971306417@qq.com
 
 **Acknowledgment:** This code is based on the [Restormer](https://github.com/swz30/Restormer). 
 
-
-
-[Pre-trained model](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing)
