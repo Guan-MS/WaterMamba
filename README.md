@@ -13,6 +13,92 @@ Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luoand Yang So
 <hr />
 
 ## Network Architecture
+<img src="assets/Mamba.png" alt="Demo" style="zoom:100%;" />
+## Dependencies and Installation
+
+This codebase was tested with the following environment configurations. It may work with other versions.
+
+- Ubuntu 20.04
+- CUDA 11.7
+- Python 3.10
+- PyTorch 2.0.1 + cu117Previous installation
+
+### Previous installation
+
+To use the selective scan with efficient hard-ware design, the `mamba_ssm` library is needed to install with the folllowing command.
+
+```
+pip install causal_conv1d==1.0.0
+pip install mamba_ssm==1.1.1
+```
+
+See [environment.yaml](./environment.yaml) for requirements on packages. Simple installation:
+
+```
+conda env create -f environment.yaml
+```
+
+## Pre-trained Model
+
+If this paper is accepted, we will publish the code for the main framework.
+
+The pre-trained model can be downloaded from [here](https://drive.google.com/drive/folders/1p0J1IJc99bs9iaIktrum0mmv3omfjSuw), and its corresponding config file is [this yaml](./configs/mamba_ldm/mamba-f16-c256-unet.yaml).
+
+## Preparing datasets
+
+### Datasets:
+
+(1) UIEB (UIE): [Data](https://li-chongyi.github.io/proj_benchmark.html)
+
+(2) SQUID (UIE): [Data](https://csms.haifa.ac.il/profiles/tTreibitz/datasets/ambient_forwardlooking/index.html)
+
+(3) UICoD (UIE): [Data](https://github.com/TrentQiQ/UVE-38K)
+
+(4) U45(UIE): [Data](https://github.com/IPNUISTlegal/underwater-test-dataset-U45-/tree/master/upload/U45)
+
+
+To make use of the [test.py](evaluate.py) and the files in [ldm/data/](./ldm/data/), the dataset folder names should be lower-case and structured as follows.
+
+```
+WaterMamba
+├─ other files and folders
+├─ dataset
+│  ├─ demo
+│  │  ├─ train
+│  │  │  ├─ input
+│  │  │  │  ├─ fig1.png
+│  │  │  │  ├─ ...
+│  │  │  ├─ target
+│  │  │  │  ├─ fig1.png
+│  │  │  │  ├─ ...
+│  │  ├─ test
+│  │  │  │  ├─ ...
+```
+
+## Training
+
+```
+python basicsr.train.py --base configs/autoencoder/WaterMamba.yml
+```
+
+## Citation
+
+If you use Restormer, please consider citing:
+
+    @article{guan2024watermamba,
+      title={WaterMamba: Visual State Space Model for Underwater Image Enhancement},
+      author={Guan, Meisheng and Xu, Haiyong and Jiang, Gangyi and Yu, Mei and Chen, Yeyao and Luo, Ting and Song, Yang},
+      journal={arXiv preprint arXiv:2405.08419},
+      year={2024}
+    }
+
+
+## Contact
+
+Should you have any question, please contact 1971306417@qq.com
+
+**Acknowledgment:** This code is based on the [Restormer](https://github.com/swz30/Restormer). 
+
 
 
 [Pre-trained model](https://drive.google.com/drive/folders/1UPsBqRFNToAzvTeF-w66Wr41K3m6ZxH9?usp=sharing)
