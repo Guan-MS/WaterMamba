@@ -4,7 +4,7 @@ Meisheng Guan, Haiyong Xu, Gangyi Jiang, Mei Yu, Yeyao Chen, Ting Luo and Yang S
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2405.08419)
 
 <p align="center">
-    <img src="assets/model.png" style="border-radius: 10px">
+    <img src="assets/model.png" style="border-radius: 5px">
 </p>
 
 <hr />
