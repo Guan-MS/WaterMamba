@@ -250,7 +250,7 @@ class CCOSS(nn.Module):
         self.W_CSSM = nn.Sequential(*[
             ChannelMamba(
                 # This module uses roughly 3 * expand * d_model^2 parameters
-                d_model=h,
+                d_model=w,
                 dim=channel,  # Model dimension d_model
                 d_state=d_state,  # SSM state expansion factor
                 d_conv=d_conv,  # Local convolution width
